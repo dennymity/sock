@@ -1,0 +1,63 @@
+.shadow {
+  position: relative;
+  margin: 200px auto 0;
+  width: 400px;
+  height: 250px;
+  background: linear-gradient(0deg,#000,#262626);
+}
+
+.shadow:before, .shadow:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+
+.shadow:after {
+  filter: blur(20px);
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  --bs-primary: #1c3dca;
+  --bs-primary-rgb: 28,61,202;
+  --bs-info: #02aaff;
+  --bs-info-rgb: 2,170,255;
+  --bs-dark: #131416;
+  --bs-dark-rgb: 19,20,22;
+  --bs-body-color: var(--bs-white);
+  --bs-body-bg: var(--bs-dark);
+  --bs-body-font-weight: 300;
+}
+
+.container {
+  height: 100%;
+  max-width: 960px;
+}
+
+.text-badge {
+  padding: .1em .4em;
+  background: rgb(0,0,0, 0.7);
+  margin-bottom: 5px;
+  color: rgb(142,142,142);
+  font-size: 14px;
+}
+
+.foto-ich {
+  max-width: 150px;
+  padding: .1em .4em;
+  border-radius: 19px 0px 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 150px;
+  width: auto;
+}
+

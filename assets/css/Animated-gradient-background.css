@@ -28,3 +28,8 @@
   margin-bottom: 50px;
 }
 
+.background-aenderung {
+  --bs-danger: #2d2d2d;
+  --bs-danger-rgb: 45,45,45;
+}
+
